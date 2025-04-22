@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Senha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🔒 Adivinhe a Senha Secreta!</h1>
+  <p>Digite um número com 4 dígitos (de 0000 a 9999)</p>
+
+  <input type="text" id="entrada" maxlength="4" placeholder="Ex: 1234">
+  <button onclick="verificarSenha()">Tentar</button>
+
+  <div id="mensagem"></div>
+  <p id="tentativas">Tentativas: 0</p>
+
+  <div id="infoContainer">
+    <p id="combinacoes"></p>
+    <p id="chance"></p>
+  </div>
+
+  <h2>📜 Histórico de Jogadas</h2>
+  <ul id="historico"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
